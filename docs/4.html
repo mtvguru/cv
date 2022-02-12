@@ -1,6 +1,6 @@
 <!doctype html><html><meta charset="UTF-8">
 <head>
-<title>Verified Contracts on MultiVAC - MTV.guru | The GURU Network</title>
+<title>CV/3 : Moonswap / Wrapped MultiVAC - wMTV Token - Verified Contracts on MultiVAC - MTV.guru | The GURU Network</title>
 <meta name="description" content="MultiVAC's Verified Smart Contracts Database - MTV.Guru | Powered by The GURU Network">
 <meta name="keywords" content="MultiVAC, Smart Contract, Verified, Verification, MTV, Chain, Decentralized Finance, Kompound, Guru Network, Free Blockchain Tools, defi, farming, Guru">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -239,7 +239,8 @@ td:first-child{text-align: left}
 td:not(td:first-child){font-family: monospace;font-size:1em}
 thead tr:hover{background: aqua;color:#020611;}
 thead{font-size:1.25em;font-weight:bolder}
-tbody tr:hover,tbody tr td:hover{cursor:pointer}
+tbody tr:hover a,tbody tr td:hover a{color:darkgreen}
+td a{text-decoration:underline dashed blue}
 table{
   counter-reset: rowNumber;
 }
@@ -250,13 +251,20 @@ tbody tr::before {
 }
 thead tr::before{
   counter-increment: (rowNumber+1);
-  content: "CV#";
+  content: "";
 	position:relative; top:;
 }
 .body{margin:0 10%}
 .uo{padding:0 10%}
 .btn{padding:10px;margin:10px}
-</style>
+.scode{
+  text-align:left;
+  overflow:auto;
+  height:75vh;
+  border:2px dashed aqua;
+  padding: 10px;
+  background:rgba(0,0,0,0.75);
+}</style>
 </head>
 <div align="center" class="body">
 <div align="center" class="uo">
@@ -273,22 +281,96 @@ thead tr::before{
 
 
 
-<table>
-	<thead><tr><td>Project</td><td>Contract</td><td>Status</td><td>MultiVAC Address</td></tr></thead>
-	<tbody>
-		<tr onclick="f1(1)"><td>mtv.guru</td><td>tvlGuru.sol</td><td>Verified</td><td>0xdf486980df72446a5eff76263efb2fa9391be136</td></tr>
-		<tr onclick="f1(2)"><td>MoonSwap</td><td>? (xMoon)</td><td>Unknown</td><td>0x4c659709750567bd505db6fab163c107bea9f161</td></tr>
-		<tr onclick="f1(3)"><td>MoonSwap</td><td>MasterChef.sol</td><td>Verified</td><td>0x93321165acc35263edd18bda7c2437f2a758f2ec</td></tr>
-		<tr onclick="f1(4)"><td>MoonSwap</td><td>? (Wrapped MTV)</td><td>Unknown</td><td>0x4c4a5d20f1ee40eaacb6a7787d20d16b7997363b</td></tr>
+<span style="font-size:2.5em">📜 cv #4</span>
+<br><br><br><br>
+<h2>MultiVAC Contract Info</h2>
+<i>(Details of the actual Smart Contract deployed on MultiVAC.)</i>
+<br><br><br>
+<div style="overflow:auto" align="center">
+<table class="ib">
+	<thead><tr><td>Key</td><td>Value</td></tr></thead>
+	<tbody id="info">
+		<tr><td>Contract Name</td><td>WrappedMTV.sol</td></tr>
+		<tr><td>Project Name</td><td>MoonSwap</td></tr>
+		<tr><td>Contract Address</td><td><a target="_blank" href="https://e.mtv.ac/account.html?address=0x4c4a5d20f1ee40eaacb6a7787d20d16b7997363b">0x4c4a5d20f1ee40eaacb6a7787d20d16b7997363b</a></td></tr>
+		<tr><td>Deployment Time</td><td>2021-11-25 18:52:56</td></tr>
+		<tr><td>First Block</td><td><a target="_blank" href="https://e.mtv.ac/block.html?number=4380649">4380649</a></td></tr>
+		<tr><td>Creation Input Size</td><td>2,161 Bytes</td></tr>
+		<tr><td>Creation Transaction</td><td><a target="_blank" href="https://e.mtv.ac/transaction.html?hash=0x1e13bb002a736a28d220df1248ffa7cb6b32a82d96a555d8b17f738dbcca5014">0x1e13bb002a736a28d220df1248ffa7cb6b32a82d96a555d8b17f738dbcca5014</a></td></tr>
+		<tr><td>Transaction Nonce</td><td>2</td></tr>
+		<tr><td>Deployer (Creator)</td><td><a target="_blank" href="https://e.mtv.ac/account.html?address=0x771baaa23d446f5ac7654434763e0890db0ba58e">0x771baaa23d446f5ac7654434763e0890db0ba58e</a></td></tr>
+		<tr><td>Constructor Arguments (№)</td><td>0</td></tr>
+		<tr><td>Language</td><td>Solidity</td></tr>
+		<tr><td>Compiler Version</td><td>?</td></tr>
+		<tr><td>Optimization</td><td>?</td></tr>
+		<tr><td>EVM Settings</td><td>?</td></tr>
 	</tbody>
 </table>
+</div>
+<br><br><br><br>
+<h2>Reference Contract Info</h2>
+<i>(The MultiVAC contract creation is compared against this contract from a different Network.)</i>
+<br><br><br>
+<div style="overflow:auto" align="center">
+Not Available<!--
+<table class="ib">
+	<thead><tr><td>Key</td><td>Value</td></tr></thead>
+	<tbody id="info2">
+		<tr><td>Verification Network</td><td>1285: MoonRiver Chain</td></tr>
+		<tr><td>Contract Name</td><td>MasterChef.sol</td></tr>
+		<tr><td>Project Name</td><td>MoonSwap</td></tr>
+		<tr><td>Contract Address</td><td><a target="_blank" href="https://moonriver.moonscan.io/address/0xcbc3e636314b442005a7196e0042b674e199b27c#code">0xcbc3e636314b442005a7196e0042b674e199b27c</a></td></tr>
+		<tr><td>Deployment Time</td><td>Nov-22-2021 03:01:06 PM +UTC</td></tr>
+		<tr><td>First Block</td><td><a target="_blank" href="https://moonriver.moonscan.io/block/947749">947749</a></td></tr>
+		<tr><td>Creation Input Size</td><td>? Bytes</td></tr>
+		<tr><td>Creation Transaction</td><td><a target="_blank" href="https://moonriver.moonscan.io/tx/0x88edc700ff283024f1cf22a244289a8f48e8a7ec0d07e4938b239d00169d14aa">0x88edc700ff283024f1cf22a244289a8f48e8a7ec0d07e4938b239d00169d14aa</a></td></tr>
+		<tr><td>Transaction Nonce</td><td>60</td></tr>
+		<tr><td>Deployer (Creator)</td><td><a target="_blank" href="https://moonriver.moonscan.io/address/0x771baaa23d446f5ac7654434763e0890db0ba58e">0x771baaa23d446f5ac7654434763e0890db0ba58e</a></td></tr>
+		<tr><td>Constructor Arguments (№)</td><td>5</td></tr>
+		<tr><td>Language</td><td>Solidity</td></tr>
+		<tr><td>Compiler Version</td><td>v0.8.6+commit.11564f7e</td></tr>
+		<tr><td>Optimization</td><td>800</td></tr>
+		<tr><td>EVM Settings</td><td>default</td></tr>
+	</tbody>
+</table>
+-->
+</div>
+<br><br><br><br>
+<h2>How to Check Authenticity?</h2>
+The "Reference Contract" should be the exact mirror of the contract on MultiVAC created with the exact same bytecode, also known as the "input" during the transaction of its deployment. This smart contract is generally a TestNet contract with a verified Source Code on the official explorer of that network, used by us to cross-examine the creation.<br><br>
+<div align="left">
+<h3>What Should Match Exactly</h3>
+<b>"Creation Input Data"</b> (without constructors) MUST match exactly. (See below)<br>
+<b>"Creation Input Size"</b> (without constructors) MUST match exactly.<br>
+<b>"Number of Constructor Arguments"</b> MUST match exactly.<br>
+<b>"Language"</b> MUST be the same.<br>
+<b>"Compiler Version"</b> MUST be the same.<br>
+<b>"Optimization"</b> MUST be the same.<br>
+<b>"EVM Settings"</b> MUST be the same.<br>
+</div>
+<br><br><br><br>
+<h2>Contract Source Code</h2>
+<i>(Scroll to Navigate)</i>
+<br><br><br>
+<pre class="scode" id="scode">Not Available
+</pre>
+<button class="btn" onclick="copsc($('scode'))">Copy Source Code</button>
+
+<br><br><br><br>
+<h2>Contract Creation Input</h2>
+<i>(Scroll to Navigate)</i>
+<br><br><br>
+<pre class="scode" id="txin">
+0x60c0604052600b60808190526a2bb930b83832b21026aa2b60a91b60a090815261002c9160009190610078565b50604080518082019091526004808252632ba6aa2b60e11b602090920191825261005891600191610078565b506002805460ff1916601217905534801561007257600080fd5b50610113565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100b957805160ff19168380011785556100e6565b828001600101855582156100e6579182015b828111156100e65782518255916020019190600101906100cb565b506100f29291506100f6565b5090565b61011091905b808211156100f257600081556001016100fc565b90565b61074f806101226000396000f3fe60806040526004361061009c5760003560e01c8063313ce56711610064578063313ce5671461020e57806370a082311461023957806395d89b411461026c578063a9059cbb14610281578063d0e30db0146102ba578063dd62ed3e146102c25761009c565b806306fdde03146100a1578063095ea7b31461012b57806318160ddd1461017857806323b872dd1461019f5780632e1a7d4d146101e2575b600080fd5b3480156100ad57600080fd5b506100b66102fd565b6040805160208082528351818301528351919283929083019185019080838360005b838110156100f05781810151838201526020016100d8565b50505050905090810190601f16801561011d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561013757600080fd5b506101646004803603604081101561014e57600080fd5b506001600160a01b03813516906020013561038b565b604080519115158252519081900360200190f35b34801561018457600080fd5b5061018d6103f1565b60408051918252519081900360200190f35b3480156101ab57600080fd5b50610164600480360360608110156101c257600080fd5b506001600160a01b038135811691602081013590911690604001356103f5565b3480156101ee57600080fd5b5061020c6004803603602081101561020557600080fd5b503561056d565b005b34801561021a57600080fd5b50610223610624565b6040805160ff9092168252519081900360200190f35b34801561024557600080fd5b5061018d6004803603602081101561025c57600080fd5b50356001600160a01b031661062d565b34801561027857600080fd5b506100b661063f565b34801561028d57600080fd5b50610164600480360360408110156102a457600080fd5b506001600160a01b038135169060200135610699565b61020c6106ad565b3480156102ce57600080fd5b5061018d600480360360408110156102e557600080fd5b506001600160a01b03813581169160200135166106fc565b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156103835780601f1061035857610100808354040283529160200191610383565b820191906000526020600020905b81548152906001019060200180831161036657829003601f168201915b505050505081565b3360008181526004602090815260408083206001600160a01b038716808552908352818420869055815186815291519394909390927f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925928290030190a350600192915050565b4790565b6001600160a01b03831660009081526003602052604081205482111561043c576040805162461bcd60e51b8152602060048201526000602482015290519081900360640190fd5b6001600160a01b038416331480159061047a57506001600160a01b038416600090815260046020908152604080832033845290915290205460001914155b156104fc576001600160a01b03841660009081526004602090815260408083203384529091529020548211156104d1576040805162461bcd60e51b8152602060048201526000602482015290519081900360640190fd5b6001600160a01b03841660009081526004602090815260408083203384529091529020805483900390555b6001600160a01b03808516600081815260036020908152604080832080548890039055938716808352918490208054870190558351868152935191937fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef929081900390910190a35060019392505050565b336000908152600360205260409020548111156105ab576040805162461bcd60e51b8152602060048201526000602482015290519081900360640190fd5b33600081815260036020526040808220805485900390555183156108fc0291849190818181858888f193505050501580156105ea573d6000803e3d6000fd5b5060408051828152905133917f7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65919081900360200190a250565b60025460ff1681565b60036020526000908152604090205481565b60018054604080516020600284861615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156103835780601f1061035857610100808354040283529160200191610383565b60006106a63384846103f5565b9392505050565b33600081815260036020908152604091829020805434908101909155825190815291517fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c9281900390910190a2565b60046020908152600092835260408084209091529082529020548156fea2646970667358221220f994d7c3328fe9a136782f624de678b04e898574d8fbab17a820bccfa3f1564b64736f6c63430006060033
+</pre>
+
 
 <br><br><br><br>
 <hr class="hr1">
 <br><br>
 
 <h2>Use-Case</h2>
-Right now (Early 2021), MultiVAC chain has opened support for EVM-like Smart Contracts. However, there is no legible method for end-users to verify the contracts, unable to trust the legitimacy of any contracts. This makes it hard to know if a Smart Contract is actually what it claims to be. During its infancy, its imperative for users who look for Decentralized opportunities to be able to verify the Source Code of Contracts they interact with in absence of a function explorer with contract source veridi.<br><br>
+Right now (Early 2021), MultiVAC chain has opened support for EVM-like Smart Contracts. However, there is no legible method for end-users to verify the contracts, unable to trust the legitimacy of any contracts. This makes it hard to know if a Smart Contract is actually what it claims to be. During its infancy, its imperative for users who look for Decentralized opportunities to be able to verify the Source Code of Contracts they interact with in absence of a function explorer or a contract source code verifier.<br><br>
 <b>MTV.guru has a solution.</b>
 <br><br><br><br><br><br>
 <h2>Methodology</h2>
@@ -298,7 +380,7 @@ We take in source codes & EVM compiler specs from the contract creator and verif
 Although we make our best efforts, our users must know that contracts might have their own special functions that could harm users, for example a farm, vault or token creator increasing transfer fees to 100%. We make our best effort to highlight these with a short review of the code wherever requested. The Source code of all the Contracts presented here is made visible publicly in its complete entirety, available for all to critic.
 <br><br><br><br><br><br>
 <h3>NOT AN AUDIT.</h3>
-<i>We are not an auditing service. Be advised that in the world of DeFi, new advancements and discoveries are made each day, and new vulnerabilities may come to light that were unknown earlier – always DYOR: Do Your Own Research and Due Dilligence (DD) before investing or interacting with any Smart Contract. None of the content presented here is NOT Financial Advice. Only use the information presented here to inform your own decisions.</i>
+<i>We are not an auditing service. Be advised that in the world of DeFi, new advancements and discoveries are made each day, and new vulnerabilities may come to light that were unknown earlier – always DYOR: Do Your Own Research and Due Dilligence (DD) before investing or interacting with any Smart Contract. None of the content presented here constitutes a Financial Advice. Only use the information presented here to inform your own decisions.</i>
 
 
 
@@ -345,7 +427,52 @@ Although we make our best efforts, our users must know that contracts might have
 </div>
 <br><br><br><br>
 <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
-function f1(n){document.location.href = String(n)+'.html';console.log("f1: opening", n);}
+function $(_) {return document.getElementById(_);}
+window.addEventListener('load',async function()
+{
+	/*
+	ca = $('info').children[2].children[1].innerHTML
+	bh = $('info').children[4].children[1].innerHTML
+	$("info").children[2].children[1].innerHTML = `<a target="_blank" href="https://e.mtv.ac/account.html?address=${ca}">${ca}</a>`
+	$("info").children[4].children[1].innerHTML = `<a target="_blank" href="https://e.mtv.ac/block.html?number=${bh}">${bh}</a>`
+	*/
+
+},false);
+
+function copsc(el)
+{
+	var inp =document.createElement('textarea');
+	document.body.appendChild(inp)
+	inp.value = el.innerHTML;
+	inp.select();
+	document.execCommand('copy',false);
+	inp.remove();
+	alert("Copied!")
+}
 </script>
+
 </html>
