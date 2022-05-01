@@ -1,226 +1,80 @@
+<html>
 <!doctype html><html><meta charset="UTF-8">
 <head>
-<title>Verified Contracts on MultiVAC - MTV.guru | The GURU Network</title>
-<meta name="description" content="MultiVAC's Verified Smart Contracts Database - MTV.Guru | Powered by The GURU Network">
-<meta name="keywords" content="MultiVAC, Smart Contract, Verified, Verification, MTV, Chain, Decentralized Finance, Kompound, Guru Network, Free Blockchain Tools, defi, farming, Guru">
+<title>DEX Charts - mtv.Guru</title>
+<meta name="description" content="DEX Charts - mtv.Guru : MultiVAC blockchain DEX pair Explorer, Real-Time Trades, Analytics, Charting, Terminal">
+<meta name="keywords" content="DEX Charts - mtv.Guru : MultiVAC blockchain DEX pair Explorer, Real-Time Trades, Analytics, Charting, Terminal">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-<link rel="shortcut icon" href="img/ftm1337.jpg" />
+<link rel="shortcut icon" href="https://ftm.guru/icons/FMC.svg" />
+</head>
+<link rel="shortcut icon" href="../img/ftm1337.jpg" />
 <style>
-*{color:#e3e9f2;overflow-wrap:break-word;overflow-x:hidden}
-a{text-decoration-line:none;padding:0 2px}
-html{background: radial-gradient(at top, #147, black);color:#e3e9f2;font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif}
-input,button{border-radius:25px;background:black;text-align:center}
-button:hover{  box-shadow: 0 0px 10px 5px rgba(255,255,255,.2), 0px 0px 10px 5px rgba(255,255,255,0.1);transition: 0.2s}
-pre{overflow-x:auto;max-width:80%}
-#votingmvg{background:#040b22;border-radius:20px;border: #aaa solid 1px}
-.topbar{display:grid;grid-template-columns: auto;}
-#mvg pre{margin: 0 0 0 0;}
-#mvg hr{border: 0px dashed;width: 50%}
-#mvg div{background: #000013;margin: auto;border-radius: 15px;border:dashed 1px;border-top: none }
-	#mvg{width: 70vw}
-.mainpanels{display:grid;grid-template-columns:auto}
-.olsa{display:grid;grid-template-columns:auto auto 1%;}
-.mainstages{text-align:center;display:grid;grid-template-columns:	 auto;}
-.mainstage{padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: linear-gradient(45deg, rgba(0,255,0,0.25), rgba(0,0,255,0.25));padding:15px;
-margin:5%;border-radius: 15px;border:aqua 2px solid}
-hr{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;border-radius: 15px;border:#0ff 2px solid;}
-.c2a{background: rgba(0,255,255,0.5);font-size:1em;padding:10px;margin:5px}
-.mainstage button{margin-bottom: 5px}
-.advert{background: linear-gradient(45deg, rgba(0,255,0,0.25), rgba(0,0,255,0.25));padding:15px;}
-#errors{font-size:0.67em}
-.farmcontrols{background: rgba(0,255,255,0.5);font-size:1em;padding:10px;width:140px;margin:5px}
-.fardet span:nth-of-type(5n+2){text-align: left}
-.fardet span:nth-of-type(5n+4){text-align: right}
-td{padding: 0px 5px;min-width:max-content;min-width: -moz-max-content}
-tr:hover{background: darkslategray}
-html, body{padding: 0;margin: 0}
-.et{background: linear-gradient(to right,rgba(0,127,255,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:right}
-.ot{background: linear-gradient(to left,rgba(0,127,255,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:left}
-.mte{background: linear-gradient(to right,rgba(0,127,255,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.mto{background: linear-gradient(to left,rgba(0,127,255,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.uo{background: linear-gradient(to bottom,rgba(0,127,255,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.tile{padding: 10px;display: grid;}
-.tile div{margin:10px}
-.cdt{background: linear-gradient(to right,rgba(0,255,127,0.5),rgba(1,240,255,0.5));border:2px solid #1ea; font-size:2em}
-.CDT{display: grid;grid-template-columns: auto 20% 1% 20% 1% 20% auto;padding: }
-div .mainstage:nth-child(4),div .mainstage:nth-child(7){padding: 0px;}
-@media(min-width:641px){
-	.mainpanels{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstages{grid-template-columns:auto;max-width: 50%;margin: auto}
-	#mvg{width: 70%;}
-	.hhr{width: 555px}
-  .CDT{display: grid;grid-template-columns: auto 10% 1% 10% 1% 10% auto;padding: }
-}
-.lowercat {text-align: left;padding:10px;line-height:1.5}
+*{text-shadow:10px 10px 5px black;color:#e3e9f2}
+#midleft{display:grid;grid-template-columns:auto}
+#toparea,*{text-align:center}
+html{background:radial-gradient(circle at center,#071430 ,#020611);color:#e3e9f2;font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif}
+#midright{overflow:auto;margin:0 5%}
+table td{padding: 10px}
+span{font-weight:bolder;}
+tbody tr:hover{cursor:  zoom-in;background: rgba(0,255,255,0.25)}
+td:nth-child(3),th:nth-child(3),
+td:nth-child(5),th:nth-child(5),
+td:nth-child(8),th:nth-child(8)
+{display:none}
+pre{overflow-x:auto;}
+.topbar div a, .advert a{text-decoration-line:none;padding:0 2px}
+hr{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;border-radius: 15px;border:aqua 2px solid;}
+#midleft div,table{padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;margin:5%;border-radius: 15px;border:aqua 2px solid; min-width:max-content}
+.advert{background: linear-gradient(45deg, rgba(255,0,0,0.25), rgba(0,0,255,0.25));padding:15px}
+input,button{border-radius:25px;background:black;text-align:center;}
+.lowercat {text-align: left;padding:10px}
 .lowercat a{text-decoration-line: none}
-.lowercat span{font-size: 1.5em; font-weight:bold}
+.lowercat span{font-size: 1.25em; font-weight:bold}
+.lowerbar2{display: grid;grid-template-columns: auto;text-align:center}
+#midrighttab{display: grid;grid-template-columns: auto auto auto}
+thead{line-height: }
+.de td,.de{color: gray;cursor: not-allowed;font-weight: lighter}
+.car{max-width: 90%;padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;margin:5%;border-radius: 15px;border:aqua 2px solid;}
+td a{text-decoration-line: none}
 @media(min-width:641px){
-	.mainpanels{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstages{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstats{grid-template-columns:auto auto auto;margin: auto}
-	#mvg{width: 70%;}
-	.hhr{width: 555px}
+  .hhr{width: 555px}
+	.lowerbar2{display: grid;grid-template-columns: auto auto auto auto;text-align:center}
+	#htc,.car{height: 80vh;width: 80vw;margin: auto;padding: 0}
+	#midleft{display:grid;grid-template-columns:50% 50%}
 }
-.gmul{border:1px solid;border-radius: 50%;	padding: 4px;margin: 0 0 0 4px;font-size: 0.8em;background: linear-gradient(225deg, rgba(0,255,0,0.5), rgba(0,0,255,0.5))}
 
-.maincards{grid-template-columns:auto ;margin: auto;display:grid;}
-.maincard{margin: calc(min(25px,10%));padding:10px;border : 1px aqua solid;
-	border-radius: 7px;
-	background: linear-gradient(45deg, rgba(0,255,0,0.125), rgba(0,0,255,0.125));
-	width: ;
-	margin: 10px;padding:10px;border : 1px aqua solid;
-	text-align:left
+#c2a{
+	display: grid;
+	grid-template-columns: auto;
 }
-.maincard hr{border: 1px solid aqua}
-.maincard:hover{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: linear-gradient(-127deg, rgba(0,255,0,0.125), rgba(0,0,255,0.125)); ;border:#0f7 1px solid;position:relative;top:-4px}
+.c2a{
+	border: 2px solid ;
+	width:220px;
+	margin: auto;
+	padding:5px;
+	margin: 5px auto;
+	background: rgba(0,255,255,0.2);
+	border-radius: 10px;
+	cursor:  grab;
+}
+.c2a:hover{box-shadow: rgba(0,255,195,0.2) 0px 0px 10px 10px;}
+
+svg text {font-size: 4px !important;}
 
 @media(min-width:641px){
-	.maincards{grid-template-columns:50% 50%;margin: auto}
+	#c2a{
+		display: grid;
+		grid-template-columns: auto 280px 280px auto;
+	}
+	svg text {font-size: 2px !important;}
+	svg polyline#pl_t_f {stroke-width: 0.25;}
 }
-@media(min-width:1024px){
-	.maincards{grid-template-columns:33% 33% 33%;margin: auto}
-}
-
-* {
-  scrollbar-width: thick;
-  scrollbar-color: #0ff #023;
-}
-*::-webkit-scrollbar {
-  width: 20px;
-}
-*::-webkit-scrollbar-track {
-  background: #0ff;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #023;
-  border-radius: 20px;
-  border: 3px solid #0ff;
-}
-.container {
-  position: ;
-  height: ;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: grid;
-  padding: 40px;
-  overflow: auto;
-  color: red !important;;
-  padding:60px;
-}
-
-.card {
-  display: flex;
-  overflow: hidden;
-  height: ;
-  min-width: 200px;
-  max-width: 240px;
-  background-color: rgba(23,20,30,.85);
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-  transition: 0.4s ease-out;
-  position: relative;
-  margin: 20px auto;
-  border-width: 3px;
-  border-style: solid;
-  border-image:
-    linear-gradient(
-      to top,
-      aqua,
-      rgba(0, 0, 0, 0)
-    )  0 0 1 100%;
-}
-
-
-.card:hover {
-  transform: translateX(-20px) translateY(-20px);
-  transition: 0.4s ease-out;
-  background: linear-gradient(to left,rgba(0,127,255,.5),rgba(1,240,255,.5));
-}
-
-
-
-.title {
-  color: white;
-  font-weight: 1000;
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
-
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 180px;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(to right,rgba(0,255,127,1),rgba(1,240,255,1));
-  transition: 0.6s ease-out;
-  border: 1px dashed black
-}
-
-.card:hover .filledbar {
-  width: 150px;
-  transition: 0.4s ease-out;
-
-}
-
-.stroke {
-  stroke: rgba(0,127,255,0.24);;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-.two{display:grid;grid-template-columns:auto;cursor:pointer}
-.two div{border: 1px dashed;margin:5%;padding:5%;border-radius:20px;background:rgba(0,0,0,0.5)}
-.two div:hover{background: rgba(0,250,250,0.5);}
-.two div span{font-size:20vw}
-.two div b{font-size:1.25em}
-@media(min-width:639px){
-  .container{grid-template-columns: auto  auto}
-  .two{grid-template-columns: 50% 50%}
-  .two div span{font-size:25vw}
-}
-@media(min-width:899px){
-  .container{grid-template-columns: auto auto auto }
-    .two{grid-template-columns: 33% auto 33%}
-
-}
-@media(min-width:1279px){
-  .container{grid-template-columns: auto auto auto auto }
-      .two{grid-template-columns: 25% auto 25% 25%}
-
-}
-sup{top:-5vw;font-size:7vw}
+html{background:radial-gradient(circle at bottom, #125, #122, #100);background-attachment: fixed;}
+.mainpanel,.mainstage{background: rgba(15,15,31,0.5);}
+*{text-shadow:6px 6px 5px black;color:#e3e9f2}
 .lowerbar{
   font-size: 1.25em;
   font-weight: bolder;
-  overflow:hidden;
 }
 .lowerbar a{
   font-size: 0.75em;
@@ -230,119 +84,153 @@ sup{top:-5vw;font-size:7vw}
   text-decoration: none
 }
 .lowerbar img{width:24px}
-table:hover td:nth-child(2),table:hover th:nth-child(2){position: sticky;left:0;background:rgba(17,27,27,0.75);}
-tr:hover td{background: aqua !important;color:#020611;}
-td,th{min-width:max-content;min-width: -moz-max-content;}
-td:first-child{text-align: left}
-td:not(td:first-child){font-family: monospace;font-size:1em}
-thead tr:hover{background: aqua;color:#020611;}
-thead{font-size:1.25em;font-weight:bolder}
-tbody tr:hover,tbody tr td:hover{cursor:pointer}
-table{
-  counter-reset: rowNumber;
-}
-tbody tr::before {
-  counter-increment: rowNumber;
-  content: counter(rowNumber) ".";
-	position:relative; top:;
-}
-thead tr::before{
-  counter-increment: (rowNumber+1);
-  content: "CV#";
-	position:relative; top:;
-}
-.body{margin:0 10%}
-.uo{padding:0 10%}
-.btn{padding:10px;margin:10px}
-
-
-
-
-
-
-
-
-
+.lowerbar .subimg{width:16px;height:16px;position: relative;right:9px;top:4px;margin-right:-11px}
 </style>
-</head>
-<div align="center" class="body">
-<div align="center" class="uo">
-	<br><br>
-	<a href="../../"><span style="font-size:3em">MTV.guru</span></a>
-	<br><br>
-	<b>MultiVAC: Verified Contracts Database</b>
 
-<br><br><br><br>
-<hr class="hr1">
-<br>
-<div align="right"><a href="mailto:ftm1337@protonmail.com?&subject=New%20MultiVAC%20Contract%20Verification&body=Please%20fill%20in%20the%20following%20details%20for%20the%20MultiVAC%20Contract%20you%20want%20to%20publish%20-%0AMultiVAC%20Contract%20Address%3A%09%09%0AContract%20Name%3A%09%09%0AProject%20Name%3A%09%09%0ACreation%20Transaction%3A%09%09%0AConstructors%20%28Blank%20if%20none%29%3A%09%09%0ALanguage%3A%09%09%0ACompiler%20Version%3A%09%09%0AOptimization%20Settings%3A%09%09%0AEVM%20Settings%3A%09%09%0ALink%20to%20a%20Verified%20Mirror%2FCopy%20of%20this%20contract%20on%20Testnet%2FOther%20Explorer%3A%09%09%0AFull%20Source%20Code%3A%09%09%0ABrief%20Description%3A%09%09%0AOther%20Project%20Links%20%28Web%2C%20Social%2C%20others%29%3A%09%09"><button class="btn">Submit a Contract</button></a></div>
-<br>
-
-
-<div style="overflow:auto" align="center">
-
-<table>
-	<thead><tr><td>Project</td><td>Contract</td><td>Status</td><td>MultiVAC Address</td></tr></thead>
-	<tbody>
-		<tr onclick="f1(1) "><td>mtv.guru</td><td>tvlGuru.sol</td><td>VERIFIED</td><td>0xdf486980df72446a5eff76263efb2fa9391be136</td></tr>
-		<tr onclick="f1(2) "><td>mtv.moonswap.tech</td><td>? (xMoon)</td><td>Unknown</td><td>0x4c659709750567bd505db6fab163c107bea9f161</td></tr>
-		<tr onclick="f1(3) "><td>mtv.moonswap.tech</td><td>MasterChef.sol</td><td>VERIFIED</td><td>0x93321165acc35263edd18bda7c2437f2a758f2ec</td></tr>
-		<tr onclick="f1(4) "><td>mtv.moonswap.tech</td><td>? (Wrapped MTV)</td><td>Unknown</td><td>0x4c4a5d20f1ee40eaacb6a7787d20d16b7997363b</td></tr>
-		<tr onclick="f1(5) "><td>mtv.ac</td><td>Wrapped MultiVAC</td><td>VERIFIED</td><td>0x8e321596267a4727746b2f48bc8736db5da26977</td></tr>
-		<tr onclick="f1(6) "><td>mtv.guru</td><td>Granary #6101</td><td>Unknown</td><td>0xc295f619afc2b8543d91c8970ea4c0726f197250</td></tr>
-		<tr onclick="f1(7) "><td>mtv.guru</td><td>Granary #6102</td><td>Unknown</td><td>0x9d9682577CA889c882412056669bd936894663fd</td></tr>
-		<tr onclick="f1(8) "><td>mtv.guru</td><td>Granary #6103</td><td>Unknown</td><td>0x2696f94f11dfF0d77875E2652FCdB537274B9CE7</td></tr>
-		<tr onclick="f1(9) "><td>amaterasu.finance</td><td>Izanagi Token</td><td>VERIFIED</td><td>0x0304f767d3ad4995915574a47ea8743a1f56931d</td></tr>
-		<tr onclick="f1(10)"><td>mtv.thexdao.com</td><td>Hertz Token</td><td>Unknown</td><td>0xFC0c8D38166fc417F19De5B44CfC339079a70913</td></tr>
-		<tr onclick="f1(11)"><td>mtv.thexdao.com</td><td>CyberSwap Router</td><td>VERIFIED</td><td>0x4B4c5D87fa1aFE3365Fa1ee9cb6c38cC6FAB8fEf</td></tr>
-		<tr onclick="f1(12)"><td>mtv.thexdao.com</td><td>CyberSwap Factory</td><td>VERIFIED</td><td>0x2CFE0fF1819d02d30aEF4045aE771b33fCAc12a0</td></tr>
-		<tr onclick="f1(13)"><td>mtv.thexdao.com</td><td>HTZ MasterChef</td><td>VERIFIED</td><td>0xbD59a890A6ba484578Be3b21f7C4d752bf34b0B6</td></tr>
-	</tbody>
-</table>
-
-</div>
-
-<br><br><br><br>
-<hr class="hr1">
-<br><br>
-
-<h2>Use-Case</h2>
-Right now (Early 2021), MultiVAC chain has opened support for EVM-like Smart Contracts. However, there is no legible method for end-users to verify the contracts, unable to trust the legitimacy of any contracts. This makes it hard to know if a Smart Contract is actually what it claims to be. During its infancy, its imperative for users who look for Decentralized opportunities to be able to verify the Source Code of Contracts they interact with in absence of a function explorer with contract source veridi.<br><br>
-<b>MTV.guru has a solution.</b>
-<br><br><br><br><br><br>
-<h2>Methodology</h2>
-We take in source codes & EVM compiler specs from the contract creator and verify it against the results of our compilation of the source against its respective copiler configuration. If the generated input data from our test matches the one used to create the contract on MultiVAC, then its safe to say that the contract source is exactly the same. Despite its laborous and manual nature, we undertake this task <u>to provide our ftm.guru users</u>, who come from Fantom Opera to MultiVAC, a level of confidence required for investing into this young ecosystem.
-<br><br><br><br><br><br>
-<h2>Disclaimer</h2>
-Although we make our best efforts, our users must know that contracts might have their own special functions that could harm users, for example a farm, vault or token creator increasing transfer fees to 100%. We make our best effort to highlight these with a short review of the code wherever requested. The Source code of all the Contracts presented here is made visible publicly in its complete entirety, available for all to critic.
-<br><br><br><br><br><br>
-<h3>NOT AN AUDIT.</h3>
-<i>We are not an auditing service. Be advised that in the world of DeFi, new advancements and discoveries are made each day, and new vulnerabilities may come to light that were unknown earlier – always DYOR: Do Your Own Research and Due Dilligence (DD) before investing or interacting with any Smart Contract. None of the content presented here is NOT Financial Advice. Only use the information presented here to inform your own decisions.</i>
-
-
-
-
-
-
-
-
-
-<br><br><br><br><br><br>
-<hr class="hr1">
-<br><br><br><br><br><br>
-
-<div align="center"><i>Want to see more?<br><br>
-<a href="mailto:ftm1337@protonmail.com">📧</a> Let us know!</i><br>
-	<div class="lowerbar">
-	<a target="_blank" href="https://twitter.com/ftm1337"><img src="https://ftm.guru/crypto-icons/twitter.svg"></a>
-	<a target="_blank" href="https://t.me/ftm1337"><img src="https://ftm.guru/crypto-icons/telegram.svg"></a>
-	<a target="_blank" href="https://discord.com/invite/QpyfMarNrV"><img src="https://ftm.guru/crypto-icons/discord.svg"></a>
+<div class="topbar">
+	<div align="center">
+		<a href="https://charts.mtv.guru"><b style="font-size:2em">charts.mtv.guru</b></a><br><br>
+		<!--<a href="farmlands.html">Farmlands👽</a>
+		<a href="index.html">FTM-Gems</a>-->
+		<a href="https://mtv.guru/GRAIN">Kompound Protocol</a>
+		<a href="https://scan.mtv.guru/dex">DEX Rankings</a>
+		<a href="https://scan.mtv.guru/tokens">Token Explorer</a>
+		<a href="https://mtv.guru/airdropper">Airdropper</a>
+		<a href="https://scan.mtv.guru">scan.mtv.guru</a>
 	</div>
 </div>
-<br><br><br><br><br><br>
-</div>
+<br>
+<hr class="hhr">
+<br><b>Historical Price Curves for<br>DeFi on MultiVAC </b>
+<br>
+<br>
+<br><a href="https://discord.gg/QpyfMarNrV">Powered by Guru Network.</a>
 
-<br><br><br><br><br>
+
+		<div class="car" >
+			<svg id="htc" viewbox="0 0 100 100" preserveAspectRatio="none">
+				<polyline stroke-width="0.25" points="0 5, 100 5" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="0 20, 100 20" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="0 35, 100 35" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="0 50, 100 50" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="0 65, 100 65" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="0 80, 100 80" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+
+				<polyline stroke-width="0.25" points="10 0, 10 100" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="30 0, 30 100" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="50 0, 50 100" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="70 0, 70 100" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<polyline stroke-width="0.25" points="90 0, 90 100" fill="none" stroke="grey" stroke-opacity="0.25"></polyline>
+				<defs>
+    				<linearGradient id="gf" gradientTransform="rotate(90)">
+      					<stop stop-color="rgba(0,255,255,1)" offset="0%"></stop>
+      					<stop stop-color="rgba(0,155,155,0)" offset="100%"></stop>
+    				</linearGradient>
+    				<linearGradient id="gu" gradientTransform="rotate(90)">
+      					<stop stop-color="rgba(0,255,127,1)" offset="0%"></stop>
+      					<stop stop-color="rgba(0,255,127,0)" offset="100%"></stop>
+    				</linearGradient>
+  				</defs>
+				<polyline id="pl_t_f" fill-opacity="0.67" stroke-width="1.0" points="12 23, 42 73, 55 22" fill="url(#gf)" stroke="aqua" stroke-opacity="1"></polyline>
+				<!--
+					<polyline id="pl_t_u" fill-opacity="0.67" stroke-width="1.0" points="82 53, 62 93, 5 12" fill="url(#gu)" stroke="#1f7" stroke-opacity="1"></polyline>
+				-->
+				<text style="font-size:2px" fill="#fff" id="ctv1" x="1" y="5">175k</text>
+				<text style="font-size:2px" fill="#fff" id="ctv2" x="1" y="20">150k</text>
+				<text style="font-size:2px" fill="#fff" id="ctv3" x="1" y="35">125k</text>
+				<text style="font-size:2px" fill="#fff" id="ctv4" x="1" y="50">100k</text>
+				<text style="font-size:2px" fill="#fff" id="ctv5" x="1" y="65">75k</text>
+				<text style="font-size:2px" fill="#fff" id="ctv6" x="1" y="80">50k</text>
+				<!--<text style="font-size:2px" fill="#fff" id="ctv7" x="1" y="95">25k</text>-->
+
+				<text style="font-size:2px" fill="#fff" id="ctl1" x="05" y="98">30 Jun</text>
+				<text style="font-size:2px" fill="#fff" id="ctl2" x="25" y="98">17 Jul</text>
+				<text style="font-size:2px" fill="#fff" id="ctl3" x="45" y="98">3 Jul</text>
+				<text style="font-size:2px" fill="#fff" id="ctl4" x="65" y="98">13 Jun</text>
+				<text style="font-size:2px" fill="#fff" id="ctl5" x="85" y="98">13 Jun</text>
+
+
+				<!--
+					<polyline id="pl_t_f_l" stroke-dasharray="2" stroke-width="0.04" points="0 35, 100 35" fill="none" stroke="aqua"></polyline>
+					<polyline id="pl_t_u_l" stroke-dasharray="2" stroke-dashoffset="2" stroke-width="0.04" fill="none" stroke="#1f7" points="0 25, 100 25"></polyline>
+				-->
+			</svg>
+			<br>
+			<!--
+				0x5269308450724513887ef0d51234976d7229c18e	wmtv-htz
+				0x32f38698550d4b36168a09df49ddd8cba67eaee5	mtv-usdc
+				0xf0a21ff216f42d7b262261778b7ffe6685082169	usdc-htz
+				0x57e962Ac51b5b197aA0f11e8A0a42172A706a70C	1	moon-wmtv
+				0x6184E61aA610eFd4a37EC5E6b51f4cC5042e8fA0	2	busd-wmtv
+				0xbdE12b1a40d6E1B3f4558fBaADE2A60961e713e6	3	busd-moon
+			-->
+			<select onchange="f1((this.value).split(','))" style="background:#000;color:#fff;border-radius:25px">
+				<option value="0x5269308450724513887ef0d51234976d7229c18e,0,18,18"> HTZ/MTV (CyberSwap)</option>
+				<option value="0x5269308450724513887ef0d51234976d7229c18e,1,18,18"> MTV/HTZ (CyberSwap)</option>
+				<option value="0x32f38698550d4b36168a09df49ddd8cba67eaee5,0,18, 6"> MTV/USDC (CyberSwap)</option>
+				<option value="0x32f38698550d4b36168a09df49ddd8cba67eaee5,1, 6,18"> USDC/MTV (CyberSwap)</option>
+				<option value="0xf0a21ff216f42d7b262261778b7ffe6685082169,0, 6,18"> USDC/HTZ (CyberSwap)</option>
+				<option value="0xf0a21ff216f42d7b262261778b7ffe6685082169,1,18, 6"> HTZ/USDC (CyberSwap)</option>
+				<option value="0xa106abf2b23fc78908f3b54b46c8a0edf8e31782,0,18,18"> MTV/ISAAC (CyberSwap)</option>
+				<option value="0xa106abf2b23fc78908f3b54b46c8a0edf8e31782,1,18,18"> ISAAC/MTV (CyberSwap)</option>
+				<option value="0x57e962Ac51b5b197aA0f11e8A0a42172A706a70C,0,18,18"> MTV/MOON (MoonSwap)</option>
+				<option value="0x57e962Ac51b5b197aA0f11e8A0a42172A706a70C,1,18,18"> MOON/MTV (MoonSwap)</option>
+				<option value="0x6184E61aA610eFd4a37EC5E6b51f4cC5042e8fA0,0,18,18" selected> MTV/BUSD (MoonSwap)</option>
+				<option value="0x6184E61aA610eFd4a37EC5E6b51f4cC5042e8fA0,1,18,18"> BUSD/MTV (MoonSwap)</option>
+				<option value="0xbdE12b1a40d6E1B3f4558fBaADE2A60961e713e6,0,18,18"> BUSD/MOON (MoonSwap)</option>
+				<option value="0xbdE12b1a40d6E1B3f4558fBaADE2A60961e713e6,1,18,18"> MOON/BUSD (MoonSwap)</option>
+				<option value="0x6F1e1Dc45e18a11B1Fd447426d9DA833Fc1298b4,0,18,18"> ISAAC/MTV (MoonSwap)</option>
+				<option value="0x6F1e1Dc45e18a11B1Fd447426d9DA833Fc1298b4,1,18,18"> MTV/ISAAC (MoonSwap)</option>
+				<option value="0xEf74b14aA8CFEe1014B7B074aaC9eA3f6fD44C7a,0,18,18"> MTV/DIRT (MoonSwap)</option>
+				<option value="0xEf74b14aA8CFEe1014B7B074aaC9eA3f6fD44C7a,1,18,18"> DIRT/MTV (MoonSwap)</option>
+				<option value="0xfcd8c457a7490646e7b2a8e69b8fb4a73614e2ae,0,18,18"> SWAPPY/MTV (MtvSwap)</option>
+				<option value="0xfcd8c457a7490646e7b2a8e69b8fb4a73614e2ae,1,18,18"> MTV/SWAPPY (MtvSwap)</option>
+				<option value="0x7229E9f024A69fd1893c6667AC00156d71C53175,0,18,18"> MTV/DIRT (MtvSwap)</option>
+				<option value="0x7229E9f024A69fd1893c6667AC00156d71C53175,1,18,18"> DIRT/MTV (MtvSwap)</option>
+			</select>
+		<br>
+		<br>
+	</div>
+</div>
+<br>
+<br>
+<details>
+	<summary><b>(+) Add Custom Pair?</b></summary>
+	<br>
+	Address of Liquidity Pool<input id="cusp_p" placeholder="'Pool' Address"><br>
+	Asset Token's Decimals: <input id="cusp_da" type="number" placeholder="Asset Decimals" value="18"><br>
+	Base Quote's Decimals: <input id="cusp_db" type="number" placeholder="Base Decimals" value="18"><br>
+	Invert the Chart? <select id="cusp_i" style="background:#000;color:#fff;border-radius:25px"><option value="0">No</option><option value="1">Yes</option></select><br><br>
+	<button onclick="f1(new Array( $('cusp_p').value),$('cusp_i').value),$('cusp_da').value),$('cusp_db').value))" style="font-size:1.25em">Plot Graph!</button>
+</details>
+<br><br>
+<span id="f1_m"></span>
+<br><br>
+
+<div align="center" class="advert">
+<!--
+<pre>Get $ELITE Tokens
+0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882</pre>
+<div id="c2a">
+	<div class="">
+	</div>
+	<div class="c2a" id="a2m">
+		🦊 Add ELITE to MetaMask
+	</div>
+	<div class="c2a" id="ibe" onclick="c1()">
+		Insta-Buy 15 FTM of ELITE
+	</div>
+	<div class="">
+	</div>
+</div>
+<br>
+<a href="https://ftmscan.com/token/0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>ftmScan</button></a>
+<a href="https://app.sushi.com/swap?outputCurrency=0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Sushi</button></a>
+<a href="https://spookyswap.finance/swap?outputCurrency=0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Spooky</button></a>
+<a href="https://swap.spiritswap.finance/#/add/FTM/0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Spirit</button></a>
+<a href="https://dex.zoocoin.cash/orders/market?inputCurrency=0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882&outputCurrency=FTM" target="_blank"><button>ZDEX</button></a>
+-->
+<br><br>
 <div class="lowerbar">Powered by Guru Network.
 <br>
 	<a target="_blank" href="https://kcc.guru">KCC.guru</a>
@@ -350,21 +238,325 @@ Although we make our best efforts, our users must know that contracts might have
 	<a target="_blank" href="https://fmc.guru">FMC.guru</a>
 	<a target="_blank" href="https://fmc.guru">MTV.guru</a>
 	<br><br>
-	<a target="_blank" href="https://kcc.guru"><img src="https://ftm.guru/crypto-icons/kcc.png"></a>
-	<a target="_blank" href="https://ftm.guru"><img src="https://ftm.guru/crypto-icons/64.png"></a>
-	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/crypto-icons/FMC.svg"></a>
-	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/crypto-icons/mtv.png"></a>
-	<a target="_blank" href="https://medium.com/@ftm1337"><img src="https://ftm.guru/crypto-icons/medium.svg"></a>
-	<a target="_blank" href="https://www.coingecko.com/coins/elite-1337"><img src="https://ftm.guru/crypto-icons/gecko.svg"></a>
-	<a target="_blank" href="https://coinmarketcap.com/currencies/elite-1337"><img src="https://ftm.guru/crypto-icons/cmc.svg"></a>
-	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"></a>
-	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/nomics.svg"></a>
-	<!--<a target="_blank" href="https://defillama.com/protocol/kccguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"></a>-->
+	<a target="_blank" href="https://messari.io/asset/ftm-guru"><img src="https://ftm.guru/icons/messari.svg"></a>
+	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/icons/FMC.svg"></a>
+	<a target="_blank" href="https://www.coingecko.com/coins/elite-1337"><img src="https://ftm.guru/icons/gecko.svg"></a>
+	<a target="_blank" href="https://coinmarketcap.com/currencies/elite-1337"><img src="https://ftm.guru/icons/cmc.svg"></a>
+	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/64.png"></a>
+	<a target="_blank" href="https://defillama.com/protocol/kccguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/kucino.svg"></a>
+	<a target="_blank" href="https://nomics.com/assets/elite2-ftmguru"><img src="https://ftm.guru/icons/nomics.svg"></a>
+	<br><br>
+	<a target="_blank" href="https://medium.com/@ftm1337"><img src="https://ftm.guru/icons/medium.svg"></a>
+	<a target="_blank" href="https://twitter.com/ftm1337"><img src="https://ftm.guru/crypto-icons/twitter.svg"></a>
+	<a target="_blank" href="https://t.me/ftm1337"><img src="https://ftm.guru/crypto-icons/telegram.svg"></a>
+	<a target="_blank" href="https://discord.com/invite/QpyfMarNrV"><img src="https://ftm.guru/crypto-icons/discord.svg"></a>
 </div>
+<a href="https://t.me/Sam4x" target="_blank">Contact us to Advertise Here.</a>
 </div>
-<br><br><br><br>
-<hr>
+<hr><br><br>
+<h5 align="center" id="disclaimer"><b><u>Disclaimer & Notice</u></b><br>
+All information presented here is only for aesthetic uses and posesses no validity to settle any claims. It is also non-exhaustive and prone to error. Advertisements are not endorsements. This dashboard is ultra-real time - It means that the data on this page has zero latency, unlike CMC or CG which have 1-10 minutes old data. FTM.guru and FMC.guru are trying to keep up with our <b>Fast First</b> motto. <i>A much deserved shoutout to all open-source and web3 developers for their benign Services!</i> A "-" or a "0" represents unavailability or anomalities in data and it is masked to suppress pollution.<br>We encourage you to report inconsistencies, ask business queries, request new Token, Protocol or DEX listings or start an ad campaign at one of our community channels:<br>
+<b><a href="https://t.me/FTM1337" target="_blank">Telegram</a> or <a href="https://discord.gg/QpyfMarNrV" target="_blank">Discord.</a></b><!--
+Our Address: 0x921Ed37f62CBe4d86D38b720EF4a4a44B24a1C5D--></h5>
+<br>
+<br>
+<div align="center" id="spadd" style="">
+<font id="spadf" size="2" style="text-align:center">(Sponsored Ad)</font>
+<br>
+<i><a href="https://t.me/FTM1337">Please Telegram us for queries.</a></i>
+<br>
+<a id="spada" href="" target="_blank">
+<img id="spadi" src="" width="80%"></img><br>
+</a>
+</div>
+
+<br><br>
+<hr class="hhr">
+<br><br>
+<div class="lowerbar2" align="center">
+	<div align="left" class="lowercat">
+		<span>Ecosystem</span><br>
+		<a href="https://mtv.guru" target="_blank">MTV.Guru</a><br>
+		<a href="https://fmc.guru" target="_blank">FantomMarketCap</a><br>
+		<a href="https://ftm.guru" target="_blank">FTM1337</a><br>
+		<a href="https://kcc.guru" target="_blank">Kucino Casino</a><br>
+	</div>
+	<div align="left" class="lowercat">
+		<span>Farming</span><br>
+		<a href="https://mtv.guru/GRAIN.html">🌾 Kompound</a><br>
+		<a href="https://ftm.guru/yieldstate.html">🔱 YieldState</a><br>
+		<a href="https://ftm.guru/LF">👽 LITE Farmlands</a><br>
+		<a href="https://vfat.tools/fantom/guru">🧑‍🌾 vfat.tools</a>
+	</div>
+	<div class="lowercat">
+		<span><a href="https://kcc.guru/casino.html">Casino & Games</a></span><br>
+		<a href="https://kcc.guru/jackpot_1.html">2-player Jackpot</a><br>
+		<a href="https://kcc.guru/instalotto.html">instaLOTTO</a><br>
+		<a href="https://kcc.guru/21hrlotto.html">🎟 21-hour LOTTO</a>
+	</div>
+	<div class="lowercat">
+		<span><a href="https://kcc.guru/dashboard.html">Dashboard</a></span><br>
+		<a href="https://kcc.guru/claimkcs.html">Claim KCS Earnings</a><br>
+		<a href="https://kcc.guru/markets.html">Market Statistics</a><br>
+		<a href="https://kcc.guru/balancesheet.html">Balance Sheet</a><br>
+	</div>
+	<div align="left" class="lowercat">
+		<span>Our Dapps</span><br>
+		<a href="https://ftm.guru/degam.html">✨ FTM CASINO</a><br>
+		<a href="https://ftm.guru/degam.html">🎰 KCS Kucino</a><br>
+		<a href="https://ftm.guru/approver.html">✅ Approver</a><br>
+		<a href="https://ftm.guru/airdrop.html">Airdrop-Tool</a><br>
+	</div>
+	<div align="left" class="lowercat">
+		<span>Chain Tools</span><br>
+		<a href="https://ftm.guru/pair.html">DEX-Explorer</a><br>
+		<a href="https://ftm.guru/fantomscan.html">🔍 FantomScan</a><br>
+		<a href="https://kcc.guru/kscan" target="_blank">🔎 kscan</a><br>
+		<a href="https://ftm.guru/apelist.html">Ape-List</a><br>
+	</div>
+	<div align="left" class="lowercat">
+		<span>Opera Utilities</span><br>
+		<a href="https://ftm.guru/elite.html">ELITE Analytics</a><br>
+		<a href="https://t.me/FTM1337/12497" target="_blank">🤖 GambleBot Telegram</a><br>
+		<a href="https://ftm.guru/index.html">🗳 Elite-Gems Voting</a>
+	</div>
+	<div class="lowercat">
+		<span>$KUCINO</span><br>
+		<a target="_blank" href="https://swap.kudex.finance/#/swap?outputCurrency=0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7">Trade at Kudex</a><br>
+		<a target="_blank" href="https://explorer.kcc.io/token/0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7">KCC Explorer</a><br>
+		<a target="_blank" href="https://t.me/kccguru">Chart at Poocoin</a><br>
+		<a target="_blank" href="https://testnet.bscscan.com/address/0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7#code">View Source</a>
+	</div>
+	<div class="lowercat">
+		<span>Resources</span><br>
+		<a target="_blank" href="https://kcc.guru/roadmap">Kucino Roadmap</a><br>
+		<a target="_blank" href="https://kcc.guru/roadmap">KUCINO Tokenimcs</a><br>
+		<a target="_blank" href="https://ftmscan.com/address/0x74bfb7e94bef5767f5f6ace2d0df73a224adb689">385 ELITE ETL</a><br>
+		<a target="_blank" href="https://kudex.finance/locker">KCS Liquidity Lock</a><br>
+		<a target="_blank" href="https://kudex.finance/locker">70% KUCINO ETL</a><br>
+		<a target="_blank" href="docs">📚 Documentation</a><br>
+	</div>
+	<div class="lowercat">
+		<span>Telegrams</span><br>
+		<a target="_blank" href="https://t.me/ftm1337">FantomOpera#1337</a><br>
+		<a target="_blank" href="https://t.me/ftmguru">Announcements</a><br>
+		<a target="_blank" href="https://t.me/kucino">Kucino Group</a><br>
+		<a target="_blank" href="https://t.me/kccguru">KCC.guru Channel</a><br>
+		<a target="_blank" href="https://t.me/kccguru">FMC New Listings</a><br>
+	</div>
+	<div class="lowercat">
+		<span>Social & Media</span><br>
+		<a target="_blank" href="https://medium.com/@ftm1337">Medium Journal</a><br>
+		<a target="_blank" href="https://discord.gg/QpyfMarNrV">Discord Server</a><br>
+		<a target="_blank" href="https://twitter.com/kccGuru">Kucino Twitter</a><br>
+		<a target="_blank" href="mailto:ftm1337@protonmail.com">Official Mail</a><br>
+	</div>
+	<div class="lowercat">
+		<a href="https://mtv.guru/index.html"><b style="font-size:2em"><code>MTV.guru</code></b></a><br>
+		<a href="https://ftm.guru/index.html"><b style="font-size:2em"><code>FTM.guru</code></b></a><br>
+		<a href="https://fmc.guru/index.html"><b style="font-size:2em"><code>FMC.guru</code></b></a><br>
+		<a href="https://kcc.guru/index.html"><b style="font-size:2em"><code>KCC.guru</code></b></a>
+	</div>
+	<div class="lowercat">
+	</div>
+</div>
+
+
+<script src="https://ftm.guru/web3.min.js">
+</script>
 <script>
-function f1(n){document.location.href = String(n)+'.html';console.log("f1: opening", n);}
+window.addEventListener('load',function()
+{
+	if(window.ethereum&&Number(window.ethereum.chainId==62621)){web3 = new Web3(web3.currentProvider);}
+	else{web3 = new Web3("https://rpc.mtv.ac")}
+	//basics();
+	//console.log("in basics")
+	f1(["0x6184E61aA610eFd4a37EC5E6b51f4cC5042e8fA0",0,18,18])
+}, false);
+
+trd=[];
+trd2=[];
+store=[];
+async function f1(addinv)
+{
+	/*
+	await fetch("https://ftm.guru/LF/tvl.json")
+		.then(dd=>{return dd.json()})
+		.then(dm=>{trd=dm;store=dm;f2(trd);})
+	*/
+	//console.log("gettin logs")
+	logs = await web3.eth.getPastLogs({address:addinv[0],topics:["0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1"],fromBlock:6e6,toBlock:"latest"})
+	ticks = []
+	//console.log("got logs",logs)
+	/*
+	4380652	-->	1637866385
+	7967274	-->	1648626251
+	*/
+	for(i=0;i< logs.length;i++){
+	ticks.push([(logs[i].blockNumber-4380652)*3000+1637866385000,addinv[1]==0?Number(logs[i].data.substr(0,66))/Number("0x"+logs[i].data.substr(66,64)):Number("0x"+logs[i].data.substr(66,64))/Number(logs[i].data.substr(0,66))])
+	}
+	console.log("see tics",ticks)
+	console.log("see adinv",addinv)
+	for(i=0;i< ticks.length;i++){ticks[i][1] /= addinv[1] == 0 ? 10**(addinv[2]-addinv[3]) : 10**(addinv[3]-addinv[2]) }
+	console.log("see ftics",ticks)
+	await f2(ticks)
+}
+async function f2(d)
+{
+	//console.log("f2",d)
+	t_0 = d[0][0]
+	t_n = d[d.length-1][0]
+	t_l = t_n - t_0
+
+	vmax = 0;vmxt=0;vmin = d[0][1];vmnt=0
+	for(i=0;i< d.length;i++) {	if(d[i][1]>vmax){vmax=d[i][1];vmxt=d[i][0]}	}
+	for(i=0;i< d.length;i++) {	if(vmin>d[i][1]){vmin=d[i][1];vmnt=d[i][0]}	}
+	vm2m = vmax-vmin
+
+	p = []
+	for(i=0;i< d.length;i++)
+	{
+		p[i] = [0,0]
+		p[i][0]	=	(d[i][0]-t_0)/t_l*100;
+		p[i][1]	=	(d[i][1]-vmin)/vm2m*100;
+	}
+	console.log(p)
+
+	var fline= document.getElementById('pl_t_f');
+
+  	var fpoints = fline.getAttribute('points');
+
+	fpoints=`-100 100,`;
+
+	for(i=0;i< p.length;i++)
+	{
+		//fpoints+=i==0?`${-10} ${100-p[i][1]},`:``
+		fpoints+=`${p[i][0]} ${100-p[i][1]},`;
+		//fpoints+=i== p.length-1?`${200} ${100-p[i][1]}`:``
+	}
+	fpoints+=`200 100`;
+
+	fline.setAttribute('points', fpoints );
+
+
+	//date
+	//dstr = (tm) => {dt0=new Date(tf+tl*tm); return ((Zdt0.getDate()+1)+"."+(dt0.getUTCMonth()+1)+"."+dt0.getUTCYear())}
+	$("ctl1").innerHTML = (new Date(t_0+t_l*.1)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl2").innerHTML = (new Date(t_0+t_l*.3)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl3").innerHTML = (new Date(t_0+t_l*.5)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl4").innerHTML = (new Date(t_0+t_l*.7)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl5").innerHTML = (new Date(t_0+t_l*.9)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctv1").innerHTML = (vmax-vm2m*0.05).toFixed(8);
+	$("ctv2").innerHTML = (vmax-vm2m*0.20).toFixed(8);
+	$("ctv3").innerHTML = (vmax-vm2m*0.35).toFixed(8);
+	$("ctv4").innerHTML = (vmax-vm2m*0.50).toFixed(8);
+	$("ctv5").innerHTML = (vmax-vm2m*0.65).toFixed(8);
+	$("ctv6").innerHTML = (vmax-vm2m*0.80).toFixed(8);
+//	$("ctv7").innerHTML = (vmax-vm2m*0.95).toFixed(8);
+
+
+
+	/*
+	trd = d
+	store = d
+	ti=trd[d.length-1][0];
+	tf=trd[0][0];
+	tl=ti-tf;
+	trd2=trd;
+	vmax=0;
+	for(i=0;i< store.length;i++)
+	{
+		if(trd[i][1]>vmax){vmax=trd[i][1]}
+		///if(trd[i][1]*trd[i][2]>vmax){vmax=trd[i][1]*trd[i][2]}
+	}
+	for(i=0;i< store.length;i++)
+	{
+		trd2[i][0]=(trd[i][0]-tf)/tl*100;
+		trd2[i][1]=trd[i][1]/vmax*100;
+		///trd2[i][2]=store[i][1]*store[i][2];
+	}
+	var fline= document.getElementById('pl_t_f');
+	///var uline= document.getElementById('pl_t_u');
+  	var fpoints = fline.getAttribute('points');
+  	///var upoints = uline.getAttribute('points');
+	///fpoints ="-1010 99,"
+	///upoints ="-1010 99,"
+	for(i= trd.length-1;i>-1;i--)
+	{
+		fpoints+=`${trd2[i][0]} ${100-trd2[i][1]},`;
+		///upoints+=`${trd2[i][0]} ${100-trd2[i][2]},`;
+	}
+	///fpoints+="1010,101"
+	///upoints+="1010,101"
+	fline.setAttribute('points', fpoints );
+	/*
+	///uline.setAttribute('points', upoints );
+	//da
+	///$("pl_t_f_l").setAttribute('points',`0 ${100-trd2[0][1]}, 100 ${100-trd2[0][1]}`);
+	///$("pl_t_u_l").setAttribute('points',`0 ${100-trd2[0][2]}, 100 ${100-trd2[0][2]}`);
+	//date
+	//dstr = (tm) => {dt0=new Date(tf+tl*tm); return ((Zdt0.getDate()+1)+"."+(dt0.getUTCMonth()+1)+"."+dt0.getUTCYear())}
+	$("ctl1").innerHTML = (new Date(tf+tl*.1)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl2").innerHTML = (new Date(tf+tl*.3)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl3").innerHTML = (new Date(tf+tl*.5)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl4").innerHTML = (new Date(tf+tl*.7)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctl5").innerHTML = (new Date(tf+tl*.9)).toDateString().substr(4).replace(" ","-").split(" ")[0];
+	$("ctv1").innerHTML = (vmax/1000*0.95).toFixed(0)+"k";
+	$("ctv2").innerHTML = (vmax/1000*0.80).toFixed(0)+"k";
+	$("ctv3").innerHTML = (vmax/1000*0.65).toFixed(0)+"k";
+	$("ctv4").innerHTML = (vmax/1000*0.50).toFixed(0)+"k";
+	$("ctv5").innerHTML = (vmax/1000*0.35).toFixed(0)+"k";
+	$("ctv6").innerHTML = (vmax/1000*0.20).toFixed(0)+"k";
+//	$("ctv7").innerHTML = (vmax/1000*0.05).toFixed(0)+"k";
+	*/
+}
+async function c1(){await window.ethereum.enable();R=new web3.eth.Contract([{"inputs":[{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactETHForTokensSupportingFeeOnTransferTokens","outputs":[],"stateMutability":"payable","type":"function"}],"0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506");R.methods.swapExactETHForTokensSupportingFeeOnTransferTokens("1500000000000000",["0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83","0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882"],window.ethereum.selectedAddress,15000000000).send({from:window.ethereum.selectedAddress, value:15000000000000000000},(e,r)=>{console.log(e,r)})}
+
+
+
+///f1()
+
+
+function sortit(n) {
+  var t, r, z, i, x, y, v, b, c = 0;
+  t = document.getElementById("maintable").getElementsByTagName("tbody")[0];
+  z = true;
+  b = "a";
+  while (z) {
+    z = false;
+    r = t.rows;
+    for (i = 0; i < (r.length - 1); i++) {
+      v = false;
+      x = (r[i].getElementsByTagName("TD")[n].textContent)//.replace(/,| |\.|\$|%/g,'');
+      if(isFinite(x)){x=Number(x)}else{x=x.toLowerCase()}
+      y = (r[i + 1].getElementsByTagName("TD")[n].textContent)//.replace(/,| |\.|\$|%/g,'');
+      if(isFinite(y)){y=Number(y)}else{y=y.toLowerCase()}
+      if (b == "a") {
+        if ((x) > (y)) {
+          v= true;
+          break;
+        }
+      } else if (b == "d") {
+        if ((x) < (y)) {
+          v = true;
+          break;
+        }
+      }
+    }
+    if (v) {
+      r[i].parentNode.insertBefore(r[i + 1], r[i]);
+      z = true;
+      c ++;
+    } else {
+      if (c == 0 && b == "a") {
+        b = "d";
+        z = true;
+      }
+    }
+  }
+    var t, r, z, i, x, y, v, b, c = 0;
+}
+function $(_) {return document.getElementById(_);}
+
 </script>
 </html>
